@@ -1,0 +1,109 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+-Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Spacing system
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/*padding:top left*/
+
+/*
+instead of black  #1c1c1c;
+main color #6741d9
+darker version #5f3dc4
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 1rem 0.8rem #b197fc;
+  border-radius: 20px;
+}
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #1c1c1c;
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  border: #6741d9;
+  border-radius: 50%;
+  background-color: #6741d9;
+  padding: 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(117, 93, 213) 35%,
+    rgb(55, 136, 209) 100%
+  );
+}
+.message-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  fill: #fff;
+  stroke: #7950f2;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.heading-4 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+.btn:link,
+.btn:visited {
+  border-radius: 20px;
+  background-color: #6741d9;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.3rem 3rem;
+  font-size: 1.4rem;
+  transition: all 0.4s;
+}
+.btn:hover,
+.btn:active {
+  background-color: #5f3dc4;
+}
+.btn-padding-md:link,
+.btn-padding-md:visited {
+  padding: 1.4rem 4rem;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.container-1 {
+  max-width: 110rem;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
